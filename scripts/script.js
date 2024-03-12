@@ -2,8 +2,11 @@ window.ondragstart = ()=> { return false; }
 
 const changeDimensionsButton = document.querySelector("button");
 changeDimensionsButton.addEventListener("click", () => {
-    let newDimensions = prompt("Enter the new dimensions:");
-    drawGrid(+newDimensions);
+    let newDimensions;
+    do {
+        newDimensions = parseInt(prompt("Enter the new dimensions (between 1 and 100):"));
+    } while (newDimensions > 100 || newDimensions <= 0) 
+    drawGrid(newDimensions);
 });
 
 function drawGrid(dimensions) {
@@ -46,4 +49,3 @@ function onMouseEnter(event) {
 }
 
 drawGrid(32);
-
