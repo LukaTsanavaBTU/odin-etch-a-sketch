@@ -5,12 +5,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .div-main {
     border: 10px solid black;
     width: 500px;
     height: 500px;
+    border-radius: 20px;
 }
 
 .div-container {
@@ -23,14 +25,19 @@ body {
     /* border: 1px solid black; */
 }
 
-/* .div-pixel:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-} */
-
 .active {
     background-color: black;
 }
 
 .inactive {
     background-color: transparent;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    color: rgba(16, 16, 88, 0.9);
+    font-size: medium;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
