@@ -20,6 +20,14 @@ body {
     border: 1px solid black;
 }
 
-.div-pixel:hover {
+/* .div-pixel:hover {
     background-color: rgba(0, 0, 0, 0.3);
+} */
+
+.active {
+    background-color: black;
+}
+
+.inactive {
+    background-color: transparent;
 }
