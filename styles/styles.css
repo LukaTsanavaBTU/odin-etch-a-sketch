@@ -2,22 +2,25 @@ body {
     margin: 0px;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .div-main {
     border: 10px solid black;
+    width: 500px;
+    height: 500px;
 }
 
 .div-container {
     display: flex;
+    height: 6.25%;
 }
 
 .div-pixel {
-    width: 30px;
-    height: 30px;
-    border: 1px solid black;
+    width: 6.25%;
+    /* border: 1px solid black; */
 }
 
 /* .div-pixel:hover {
